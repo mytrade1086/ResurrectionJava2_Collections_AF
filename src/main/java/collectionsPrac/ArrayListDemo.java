@@ -1,4 +1,5 @@
 package collectionsPrac;
+
 import javax.xml.transform.sax.SAXSource;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -77,35 +78,33 @@ public class ArrayListDemo {
 
 
         //2 Lambda for each
-        al.forEach(n-> System.out.println("fromforeach"+n));
+        al.forEach(n -> System.out.println("fromforeach" + n));
 
         //3 foreachremaining
-            Iterator<String> sl=al.iterator();
-            sl.forEachRemaining(s-> System.out.println("from foreachremaining"+s));
+        Iterator<String> sl = al.iterator();
+        sl.forEachRemaining(s -> System.out.println("from foreachremaining" + s));
 
-            //for loop
+        //for loop
 
-        for(int i=0;i<al.size();i++){
+        for (int i = 0; i < al.size(); i++) {
 
-            System.out.println("From regular for"+al.get(i));
+            System.out.println("From regular for" + al.get(i));
         }
 
         //for each loop
 
-        for(String s:al){
-            System.out.println("from for each regular one" +s);
+        for (String s : al) {
+            System.out.println("from for each regular one" + s);
         }
 
 
         //listIterator
 
-       ListIterator<String> sl2= al.listIterator(al.size());
-        while(sl2.hasPrevious())
-        {
-            String str=sl2.previous();
-            System.out.println("from list iterator "+str);
+        ListIterator<String> sl2 = al.listIterator(al.size());
+        while (sl2.hasPrevious()) {
+            String str = sl2.previous();
+            System.out.println("from list iterator " + str);
         }
-
 
 
     }
