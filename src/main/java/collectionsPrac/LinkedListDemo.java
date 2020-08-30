@@ -27,20 +27,37 @@ public class LinkedListDemo {
         System.out.println(ll.getFirst());//AA gets first element. NoSuchElementException when list is empty
         System.out.println(ll.getLast());//ZZ gets  last element . NoSuchElementException when list is empty
 
-        ll.element();//Retrieves, but does not remove, the head (first element) of this list.
+        System.out.println(ll.element());//Retrieves, but does not remove, the head (first element) of this list.
 
         //Offer method returns true on success
-        ll.offer("lastviaOffer");//Adds element at the last
-        ll.offerFirst("firstViaoffer");//adds element at first
-        ll.offerLast("lastvia offerlast");//adds aelement at last
+        ll.offer("offer");//Adds element at the last
+        ll.offerFirst("offerFirst");//adds element at first
+        ll.offerLast("offerLast");//adds aelement at last
 
 
-        ll.peek()
-                ll.poll()
-                        ll.peekFirst()
-                                ll.pop()
-                                        ll.poll()
+        System.out.println("Linkedlist post offerMethod"+ll);
+        //Retrieves element but does not remove it
+
+        System.out.println("ll.peek() returns FIRST element. It does not delete anything "+ll.peek());
+        System.out.println("ll.peekFirst() returns FIRST element. It does not delete anything "+ll.peekFirst());
+        System.out.println("ll.peekLast() returns LAST element. It does not delete anything "+ll.peekLast());
 
 
+//ll.pop()
+//        //Retrieves and removes element
+//        ll.poll()// removes first element
+//        ll.pollFirst()//removes first element
+//        ll.pollLast()//removes last element
+//
+//
+//                ll.removeFirst()//
+//                        ll.removeFirstOccurrence()//
+//                                ll.removeLastOccurrence()//
+//                                        ll.removeLast()//
+
+              // ll.push();//like addFirst
+//ll.getFirst()
+        //ll.getLast()
+        //ll.get
     }
 }
