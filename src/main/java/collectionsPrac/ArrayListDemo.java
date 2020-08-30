@@ -1,7 +1,10 @@
 package collectionsPrac;
+import javax.xml.transform.sax.SAXSource;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.jar.JarOutputStream;
 
 //ArrayList is not thread safe
 
@@ -60,6 +63,8 @@ public class ArrayListDemo {
         al.add("sumit");
         System.out.println(al.lastIndexOf("sumit"));//4
 
+
+        //Iterating
         Iterator<String> ital = al.iterator();
         while (ital.hasNext()) {
             System.out.println(ital.next());
@@ -69,6 +74,39 @@ public class ArrayListDemo {
 //                    sumit
 //            sumit
         }
+
+
+        //2 Lambda for each
+        al.forEach(n-> System.out.println("fromforeach"+n));
+
+        //3 foreachremaining
+            Iterator<String> sl=al.iterator();
+            sl.forEachRemaining(s-> System.out.println("from foreachremaining"+s));
+
+            //for loop
+
+        for(int i=0;i<al.size();i++){
+
+            System.out.println("From regular for"+al.get(i));
+        }
+
+        //for each loop
+
+        for(String s:al){
+            System.out.println("from for each regular one" +s);
+        }
+
+
+        //listIterator
+
+       ListIterator<String> sl2= al.listIterator(al.size());
+        while(sl2.hasPrevious())
+        {
+            String str=sl2.previous();
+            System.out.println("from list iterator "+str);
+        }
+
+
 
     }
 }
