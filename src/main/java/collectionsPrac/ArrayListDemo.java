@@ -1,8 +1,9 @@
 package collectionsPrac;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+
+//ArrayList is not thread safe
 
 public class ArrayListDemo {
     public static void main(String[] args) {
@@ -44,7 +45,6 @@ public class ArrayListDemo {
 
 
         System.out.println(al.get(0));
-
         System.out.println(al.contains("sumit"));//true
         System.out.println(al.contains("df"));//false
 
@@ -60,7 +60,6 @@ public class ArrayListDemo {
         al.add("sumit");
         System.out.println(al.lastIndexOf("sumit"));//4
 
-
         Iterator<String> ital = al.iterator();
         while (ital.hasNext()) {
             System.out.println(ital.next());
@@ -70,7 +69,6 @@ public class ArrayListDemo {
 //                    sumit
 //            sumit
         }
-
 
     }
 }
