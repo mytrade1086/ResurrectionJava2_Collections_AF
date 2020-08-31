@@ -41,8 +41,5 @@ public class HashMapDemo {
 
    hm.compute("Sumit",(k,v)->(v==null)?1:v+1);
         System.out.println(hm);//{Amit=2, Sumit=112}
-
-        hm.co
-
     }
 }
