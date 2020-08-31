@@ -1,8 +1,8 @@
 package MapInterface;
 
-public class HashMap {
+public class HashMapDemo {
 
     public static void main(String[] args) {
-        
+
     }
 }
