@@ -15,8 +15,11 @@ public class TreeSetDemo {
         System.out.println(ts); //[AA, B, C]  Sorts in natural order
         System.out.println(ts.descendingSet());//[C, B, AA]
 
-
-
+//
+//        ts.pollFirst()
+//                ts.first()
+//                        ts.last()
+//ts.tailSet()
 
 
     }
